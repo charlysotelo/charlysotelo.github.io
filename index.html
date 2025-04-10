@@ -51,6 +51,19 @@
             <img src="https://cdn-icons-png.flaticon.com/512/561/561188.png" alt="Email">
         </a>
     </div>
+    <script>
+        // Create circular texture for points
+        const canvas = document.createElement('canvas');
+        canvas.width = 16;
+        canvas.height = 16;
+        const context = canvas.getContext('2d');
+        context.beginPath();
+        context.arc(8, 8, 7, 0, Math.PI * 2, false);
+        context.fillStyle = '#00FF00';
+        context.fill();
+        context.closePath();
+        const circleTexture = new THREE.CanvasTexture(canvas);
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
