@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Point Cloud Simulation</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: #000; 
+            overflow: hidden; 
+            font-family: Arial, sans-serif; 
+        }
+        canvas { display: block; }
+        #header { 
+            position: fixed; 
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 10; 
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 10px; 
+            border-radius: 5px; 
+            display: flex; 
+            gap: 15px; 
+        }
+        #header a img { 
+            width: 30px; 
+            height: 30px; 
+            opacity: 0.8; 
+            transition: opacity 0.3s; 
+        }
+        #header a img:hover { 
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <div id="header">
+        <a id="githubLink" href="https://github.com/charlysotelo" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+        </a>
+        <a id="linkedinLink" href="https://www.linkedin.com/in/carlos-sotelo-8969a282" target="_blank">
+            <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn">
+        </a>
+        <a id="steamLink" href="https://steamcommunity.com/id/Charly2" target="_blank">
+            <img src="https://steamcommunity.com/favicon.ico" alt="Steam">
+        </a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
